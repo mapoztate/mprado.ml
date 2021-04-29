@@ -1,5 +1,5 @@
 # mprado.ml
-my personal website/blog to replace my stupid google sites version when I get around to it??? or maybe i just give up and pay for wordpress or squarespace instead....
+my personal website/blog based on [gatsby](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog) to replace my stupid google sites version when I get around to it??? or maybe i just give up and pay for wordpress or squarespace instead....
 
 
 ## goals
