@@ -11,3 +11,7 @@ my personal website/blog based on [gatsby](https://www.gatsbyjs.com/starters/gat
 ## inspo
 * [vihan.org](https://vihan.org/)
 * [j-fan.ml](https://j-fan.ml/)
+
+
+and most importantly...
+* [angelajt.com](http://angelajt.com/)
