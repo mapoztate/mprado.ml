@@ -1,9 +1,11 @@
 ---
 title: "Smart" is a man-made concept
-date: "2020-09-21T22:00"
+date: "2020-09-21T22:12:03.284Z"
 tags: education, life
 description: "Just like time, intelligence is not only subjective, but human made as well."
 ---
+
+
 For the majority of my short-lived 14 year old life, I've been referred to as smart, gifted, a prodigy, and names of the sort. At first, I was smug of it but began to realize, what did I do to deserve such high praise? It certainly didn't earn me anything, yet it felt good. Some other people in this situation find themselves satisfied by this fact and rely purely on that as their reward.
 
 I've had my fair share of rough times. Everyone needs praise from time to time. It feels good to satisfy that reward pathway and claim that award. But for me, I was never really hard to satisfy. I never complained about my situation or anything, I just took things at face value and cherished any moment above average. That's what our system was trying to encourage. Not every kid thinks like this though. By forcing everyone to go to a unified education system, those who excelled are praised, with the downside of the "average" being left in the dust. Don't get me wrong, I believe the unified education system is a great way to learn general things about education, figure out what you like, and connect with people outside your field. 
