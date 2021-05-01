@@ -5,7 +5,6 @@ my personal website/blog based on [the gatsby starter blog](https://www.gatsbyjs
 ## goals
 * first of all learn how to use this thing
 * migrate all the content that is currently on mprado.ml to here
-* try to spin up the training.baycyber.net project again
 * do additional research and add them here based on [this](https://samsclass.info/197/research.htm)
 
 ## inspo
