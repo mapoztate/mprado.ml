@@ -48,12 +48,16 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>{post.frontmatter.date} <span className="time">/ {post.frontmatter.time}</span></p>
         </header>
-        <section
+        <div>
+          <Tags>{tags}</Tags>
+        </div>
+        <section class="post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        <div ref={commentsWrapper} />
         <hr />
         <footer>
           <Bio />
@@ -100,6 +104,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteTitle // might be the root problem
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -108,8 +113,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date: date(formatString: "MMMM DD, YYYY")
+        time: date(formatString: "HH:mm")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
