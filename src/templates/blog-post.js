@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
