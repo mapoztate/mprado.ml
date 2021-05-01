@@ -9,7 +9,7 @@ import Tags from "../components/tags"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.siteTitle || `Title`
+  const blogTitle = data.site.siteMetadata?.blogTitle || `Title`
   const { previous, next } = data
   const tags = post.frontmatter.tags || []
   const commentsWrapper = useRef();
@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
   }, [post.frontmatter.title]);
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={blogTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -104,7 +104,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteTitle
+        blogTitle
       }
     }
     markdownRemark(id: { eq: $id }) {
