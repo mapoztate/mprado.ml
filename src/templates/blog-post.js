@@ -104,7 +104,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteTitle // might be the root problem
       }
     }
     markdownRemark(id: { eq: $id }) {
