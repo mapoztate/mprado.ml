@@ -4,8 +4,9 @@ my personal website/blog based on [the gatsby starter blog](https://www.gatsbyjs
 
 ## goals
 * first of all learn how to use this thing
+* personalize this to my liking
 * migrate all the content that is currently on mprado.ml to here
-* do additional research and add them here based on [this](https://samsclass.info/197/research.htm)
+* then write more blogs, add more portfolio content
 
 ## inspo
 * [vihan.org](https://vihan.org/)
@@ -14,3 +15,5 @@ my personal website/blog based on [the gatsby starter blog](https://www.gatsbyjs
 
 and most importantly...
 * [angelajt.com](http://angelajt.com/)
+
+> i literally would not know how to use this thing if it weren't for her
