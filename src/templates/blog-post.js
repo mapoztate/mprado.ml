@@ -4,12 +4,37 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Tags from "../components/tags"
+
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  const tags = post.frontmatter.tags || []
+  const commentsWrapper = useRef();
+  useEffect(() => {
+    const wrapper = commentsWrapper.current;
+    if (wrapper) {
+      const script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.async = true;
+      script.crossOrigin = "anonymous";
+      script.setAttribute("repo", "mapoztate/blog");
+      script.setAttribute("issue-term", post.frontmatter.title);
+      script.setAttribute("label", "comment");
+      script.setAttribute("theme", "github-dark");
 
+      wrapper.appendChild(script);
+
+      return () => {
+        while (wrapper.firstChild) {
+          wrapper.removeChild(wrapper.lastChild);
+        }
+      };
+    }
+  }, [post.frontmatter.title]);
+  
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
