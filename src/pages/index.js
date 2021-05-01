@@ -1,18 +1,19 @@
-import * as React from "react"
+import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
+import Tags from "../components/tags"
 
-const BlogIndex = ({ data, location }) => {
+const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+        <SEO title="All posts" />
         <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
@@ -25,11 +26,12 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <SEO title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          const tags = post.frontmatter.tags
 
           return (
             <li key={post.fields.slug}>
@@ -52,8 +54,9 @@ const BlogIndex = ({ data, location }) => {
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
-                  />
+                    />
                 </section>
+                <Tags>{tags}</Tags>
               </article>
             </li>
           )
@@ -63,7 +66,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default IndexPage
 
 export const pageQuery = graphql`
   query {
@@ -82,6 +85,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }
