@@ -1,18 +1,43 @@
-import * as React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
+import Tags from "../components/tags"
+
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const blogTitle = data.site.siteMetadata?.blogTitle || `Title`
   const { previous, next } = data
+  const tags = post.frontmatter.tags || []
+  const commentsWrapper = useRef();
+  useEffect(() => {
+    const wrapper = commentsWrapper.current;
+    if (wrapper) {
+      const script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.async = true;
+      script.crossOrigin = "anonymous";
+      script.setAttribute("repo", "mapoztate/blog");
+      script.setAttribute("issue-term", post.frontmatter.title);
+      script.setAttribute("label", "comment");
+      script.setAttribute("theme", "github-dark");
+
+      wrapper.appendChild(script);
+
+      return () => {
+        while (wrapper.firstChild) {
+          wrapper.removeChild(wrapper.lastChild);
+        }
+      };
+    }
+  }, [post.frontmatter.title]);
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
+    <Layout location={location} title={blogTitle}>
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
@@ -23,12 +48,16 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>{post.frontmatter.date} <span className="time">/ {post.frontmatter.time}</span></p>
         </header>
-        <section
+        <div>
+          <Tags>{tags}</Tags>
+        </div>
+        <section class="post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        <div ref={commentsWrapper} />
         <hr />
         <footer>
           <Bio />
@@ -75,6 +104,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        blogTitle
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -83,8 +113,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date: date(formatString: "MMMM DD, YYYY")
+        time: date(formatString: "HH:mm")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
