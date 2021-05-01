@@ -3,9 +3,9 @@ module.exports = {
     title: `Matt's blog`,
     author: {
       name: `Matthew Prado`,
-      summary: `just a simple man doing complicated things`,
+      summary: `, a simple man doing complicated things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Honestly, this is just a demo website for now until I learn how to use Gatsby properly.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `mapoztate`,
