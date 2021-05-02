@@ -72,7 +72,7 @@
   --color-text: #e6e8eb;
   --color-text-light: #929697;
   --color-heading: #1a202c;
-  --color-heading-black: #2C2F33;
+  --color-heading-black: #FFFFFF; /* actually white because the website is in dark mode */
   --color-accent: #6d8df7;
 }
 
@@ -85,7 +85,6 @@
 }
 
 html {
-  /* if it doesnt work, this is the problem */
   background-color: #23272A; 
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
