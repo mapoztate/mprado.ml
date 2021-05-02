@@ -20,4 +20,4 @@ TLDR: Just like time, intelligence is not only subjective, but human made as wel
 ![Webp net-resizeimage](https://user-images.githubusercontent.com/71365470/116774448-7b04a500-aa11-11eb-80ed-203e8f5ba999.jpg)
 
 
-> Back when life was simpler. | Taken Feb. 22, 2007
+<p align="center">Back when life was simpler. | Taken Feb. 22, 2007</p>
