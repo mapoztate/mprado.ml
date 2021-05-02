@@ -1,7 +1,6 @@
 ---
 title: '"Smart" is a man-made concept'
 date: 2020-09-21T22:00
-description: Just like time, intelligence is not only subjective, but human made as well.
 tags: "education"
 ---
 inspired by this tweet: <https://twitter.com/shl/status/1306938826070224896>
