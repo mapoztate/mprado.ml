@@ -17,7 +17,8 @@ A great example of proving this point is my mom. Back in the Philippines, my mom
 
 TLDR: Just like time, intelligence is not only subjective, but human made as well. 
 
-![Webp net-resizeimage](https://user-images.githubusercontent.com/71365470/116774448-7b04a500-aa11-11eb-80ed-203e8f5ba999.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71365470/116774448-7b04a500-aa11-11eb-80ed-203e8f5ba999.jpg" />
+</p>
 
 <p align="center">Back when life was simpler. | Taken Feb. 22, 2007</p>
