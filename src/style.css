@@ -69,7 +69,7 @@
   --fontSize-7: 3.815rem;
 
   --color-primary: #4d75f7;
-  --color-text: #474a4e;
+  --color-text: #e6e8eb;
   --color-text-light: #929697;
   --color-heading: #1a202c;
   --color-heading-black: black;
@@ -86,7 +86,7 @@
 
 html {
   /* if it doesnt work, this is the problem */
-  background-color: lightslategray; 
+  background-color: #23272A; 
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
