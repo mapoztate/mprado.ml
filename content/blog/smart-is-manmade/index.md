@@ -3,7 +3,7 @@ title: '"Smart" is a man-made concept'
 date: 2020-09-21T22:00
 tags: "education"
 ---
-inspired by this tweet: <https://twitter.com/shl/status/1306938826070224896>
+Blog inspired by [this](https://twitter.com/shl/status/1306938826070224896) tweet:
 
 For the majority of my short-lived 14 year old life, I've been referred to as smart, gifted, a prodigy, and names of the sort. At first, I was smug of it but began to realize, what did I do to deserve such high praise? It certainly didn't earn me anything, yet it felt good. Some other people in this situation find themselves satisfied by this fact and rely purely on that as their reward.
 
@@ -15,7 +15,7 @@ It just happens to turn out that all those perfect qualities that I mentioned ea
 
 A great example of proving this point is my mom. Back in the Philippines, my mom lived in the shadow of her 11 siblings. She never received high marks or had accomplishments that distinguished her from the rest. She didn't care about looks, guys, or money. She was just an innocent country girl that loved playing soccer, eating snacks, and learning practical things. She hated math past its practical use, physical education with no application, and the history of those that'll be forgotten. She was hooked by the sciences though. It made sense to her. Biology explained why certain things happened in the Earth, chemistry explained why certain things reacted the way they did. Around the time she went to college, she was still the same. She only liked the sciences and still had no direction in life. The one difference she had compared to everyone else? She loved the courses she chose, even when certain people tried to put her down. She graduated with a double bachelor's in teaching and nursing. She even had plans to earn her MBA as well, if it weren't for my father marrying her. Look at her now. She's one of three siblings that made it to North America and is the second highest earning member from her family back home. Just shows how far you can go if you're in the right environment.
 
-TLDR: Just like time, intelligence is not only subjective, but human made as well.
+TLDR: Just like time, intelligence is not only subjective, but human made as well. 
 
 ![Webp net-resizeimage](https://user-images.githubusercontent.com/71365470/116774448-7b04a500-aa11-11eb-80ed-203e8f5ba999.jpg)
 
