@@ -2,7 +2,7 @@
 title: '"Smart" is a man-made concept'
 date: 2020-09-21T22:00
 description: Just like time, intelligence is not only subjective, but human made as well.
-tags: education
+tags: ["education", "2020"]
 ---
 For the majority of my short-lived 14 year old life, I've been referred to as smart, gifted, a prodigy, and names of the sort. At first, I was smug of it but began to realize, what did I do to deserve such high praise? It certainly didn't earn me anything, yet it felt good. Some other people in this situation find themselves satisfied by this fact and rely purely on that as their reward.
 
